@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <img src="images.jpeg" alt="My Photo">
+            <h1>Welcome to My Portfolio</h1>
+            
+            <p>Mohit Jagini a student of IIITB</p>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-tile">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-tile">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-tile">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-box">
+                <h3>Background</h3>
+                <p>background information goes here</p>
+            </div>
+            <div class="about-box">
+                <h3>Skills</h3>
+                <p>skills information goes here</p>
+            </div>
+            <div class="about-box">
+                <h3>Interests</h3>
+                <p> interests information goes here</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" style="display: flex; flex-wrap: wrap; justify-content: space-between;" onsubmit="return validateForm()">
+                <div class="form-group" style="flex: 0 0 100%;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group" style="flex: 0 0 100%; margin-top: 10px;">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group" style="flex: 0 0 100%;">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="social-icons" style="flex: 0 0 30%;">
+                    <a href="https://www.facebook.com/yourfacebookprofile" target="_blank"><i class="fab fa-facebook" style="font-size: 30px;"></i></a>
+                    <a href="https://www.instagram.com/yourinstagramprofile" target="_blank"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
+                    <a href="mailto:youremail@example.com"><i class="fas fa-envelope" style="font-size: 30px;"></i></a>
+                </div>
+                <button type="submit" onclick="validateForm(event)">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
